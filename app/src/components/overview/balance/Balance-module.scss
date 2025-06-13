@@ -1,0 +1,47 @@
+
+.balance-wrapper{
+	font-family: 'Inter', sans-serif;
+}
+
+
+.balance-title{
+	color: #878787;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 32px; 
+	margin-bottom: 8px;
+}
+
+.balance-card-wrapper{
+	padding: 20px 24px;
+	background: var(--White, #FFF);
+	border-radius: 8px;
+	max-width: 352px;
+	max-height: 232px;
+}
+
+.balance-block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding-bottom: 12px;
+	border-bottom: 1px solid #F3F3F3;
+
+	.balance-amount{
+		color: #191919;
+
+		font-size: 22px;
+		font-weight: 800;
+		line-height: 32px; 
+	}
+	a{
+		color: var(--Secondary, #525256);
+		text-align: right;
+
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 20px; /* 142.857% */
+		text-transform: capitalize;
+	}
+}

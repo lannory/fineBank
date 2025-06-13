@@ -1,0 +1,22 @@
+.nav {
+
+	ul{
+		display: flex;
+		column-gap: 20px;
+		align-items: center;
+	}
+}
+.item{
+	padding: 8px;
+	color: var(--Secondary, #525256);
+
+
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px; /* 150% */
+	text-transform: capitalize;
+}
+.active {
+	color: #299D91;
+	border-bottom: 2px solid #299D91
+}

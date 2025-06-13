@@ -1,0 +1,96 @@
+.bills-wrapper {
+	font-family: 'Inter', sans-serif;
+}
+.bills-title {
+	color: #878787;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 32px; 
+	margin-bottom: 8px;
+}
+.bills-card-wrapper {
+	padding: 20px 24px;
+	background: var(--White, #FFF);
+	border-radius: 8px;
+	max-width: 352px;
+	max-height: 232px;
+}
+
+.bills-card-wrapper {
+}
+.bills-card {
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+}
+.date {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 8px;
+	background: var(--Special-BG, rgba(210, 210, 210, 0.25));
+	padding: 8px;
+}
+.months {
+	color: var(--Gray-01, #666);
+	text-align: center;
+
+	/* Medium 12-16 */
+	font-family: Inter;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 16px; /* 133.333% */
+}
+.day {
+	color: var(--Default-Black, #191919);
+	text-align: center;
+
+/* Exbold 22-32 */
+	font-family: Inter;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 32px; /* 145.455% */
+	text-transform: capitalize;
+}
+.desc {
+	margin-right: 8px;
+}
+.title {
+	color: var(--Secondary, #525256);
+
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px; /* 150% */
+	text-transform: capitalize;
+}
+.text {
+	color: var(--Gray-03, #9F9F9F);
+
+	font-size: 12px;
+	line-height: 16px; /* 133.333% */
+}
+
+.price {
+	color: var(--Secondary, #525256);
+	text-align: center;
+
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px; /* 150% */
+	text-transform: capitalize;
+	border-radius: 8px;
+	border: 1px solid var(--Gray-05, #E8E8E8);
+	background: var(--White, #FFF);
+	padding: 8px 12px;
+}
+
+.first{
+	padding: 8px 0 20px;
+	border-bottom: 1px solid var(--Gray-06, #F3F3F3);
+}
+
+.second{
+	padding: 20px 0 4px;
+}

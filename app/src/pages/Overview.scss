@@ -1,0 +1,27 @@
+main{
+	max-height: 100vh;
+}
+
+.top-row{
+	display: flex;
+	
+	column-gap: 24px;
+	margin-bottom: 32px;
+}
+
+.overview-top-card{
+	width: 352px;
+	height: 232px;
+	box-sizing: border-box;
+}
+
+.bottom-row{
+	display: flex;
+	column-gap: 24px;
+}
+
+.right{
+	display: flex;
+	flex-direction: column;
+	row-gap: 32px;
+}

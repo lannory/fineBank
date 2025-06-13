@@ -1,0 +1,101 @@
+
+.cardSlider{
+	font-family: "Inter", sans-serif;
+	padding-top: 12px;
+	max-width: 304px;
+	
+}
+
+.cardSlider-item{
+	padding: 16px;
+	background-color: #299D91;
+	max-width: 304px;
+	border-radius: 4px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	.card-desc{
+
+	}
+	.card-text{
+		color: var(--Special-BG2, rgba(255, 255, 255, 0.70));
+
+		/* Medium 14-20 */
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 20px; /* 142.857% */
+		text-transform: capitalize;
+	}
+	.card-title{
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 24px; /* 150% */
+		text-transform: capitalize;color: #fff;
+	}
+	.card-number{
+		color: var(--Special-BG2, rgba(255, 255, 255, 0.70));
+
+		/* Medium 14-20 */
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 20px; /* 142.857% */
+		text-transform: capitalize;
+	}
+}
+
+.card-extras{
+	img{
+		margin-bottom: 14px;
+	}
+	.card-balances{
+		display: flex;
+		column-gap: 12px;
+		align-items: center;
+	}
+	.card-link{
+		border-radius: 20px;
+		background: var(--White, #FFF);
+		padding: 4px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.cardSlider-controls{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	.prev, .next{
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 20px; /* 142.857% */
+		text-transform: capitalize;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 4px;
+	}
+	.prev{
+		color: var(--Gray-04, #D1D1D1);
+	}
+
+}
+
+.slider-dots{
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.dot{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #D1D1D1;
+}
+
+
+.dot-active{
+	background-color: #299D91;
+}

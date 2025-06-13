@@ -1,0 +1,120 @@
+.card {
+	box-sizing:border-box;
+	width: 352px;
+	height: 288px;
+	padding: 24px;
+	border-radius: 8px;
+	background: var(--White, #FFF);
+
+	/* Shadow 01 */
+	box-shadow: 0px 20px 25px 0px rgba(76, 103, 100, 0.10);
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 12px;
+	border-bottom: 1px solid var(--Special-BG, rgba(210, 210, 210, 0.25));
+	margin-bottom: 16px;
+}
+.title {
+	color: var(--Gray-02, #878787);
+
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px; /* 150% */
+	text-transform: capitalize;
+}
+.service {
+	color: var(--Gray-01, #666);
+	text-align: right;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px; /* 133.333% */
+	display: flex;
+	align-items: center;
+	column-gap: 7px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+}
+
+.itemTitle {
+	color: var(--Default-Black, #191919);
+
+
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 28px; /* 140% */
+	text-transform: capitalize;
+	margin-bottom: 4px;
+}
+.subtitle {
+	color: var(--Gray-03, #9F9F9F);
+
+	font-size: 14px;
+	line-height: 20px; /* 142.857% */
+}
+.btns {
+	margin-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.removeBtn {
+	color: var(--Primary-color, #299D91);
+	font-size: 16px;
+	line-height: 24px; /* 150% */
+}
+.detailsBtn {
+	display: flex;
+	column-gap: 8px;
+	align-items: center;
+	padding: 8px 20px;
+	color: var(--White, #FFF);
+
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px; /* 142.857% */
+	text-transform: capitalize;
+	border-radius: 4px;
+background: var(--Primary-color, #299D91);
+}
+
+.settings {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 4px;
+	padding-top: 76px;
+}
+.addBtn {
+	box-sizing: border-box;
+	width: 208px;
+	padding: 12px 32px;
+	border-radius: 4px;
+	background: var(--Primary-color, #299D91);
+
+	color: var(--White, #FFF);
+	text-align: center;
+
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px; /* 150% */
+	text-transform: capitalize;
+}
+.editBtn {
+	color: var(--Gray-03, #9F9F9F);
+	text-align: center;
+
+	padding: 12px 24px;
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px; /* 150% */
+}
+

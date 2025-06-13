@@ -1,0 +1,48 @@
+.wrapper {
+
+}
+.mainTitle{
+	color: var(--Gray-02, #878787);
+
+	/* Header 22-32 */
+
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px; /* 145.455% */
+	margin-bottom: 8px;
+}
+.chartWrapper {
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;flex-direction: column;
+	padding: 16px 24px 20px 24px;
+	
+	
+	border-radius: 8px;
+	background: var(--White, #FFF);
+
+	/* Shadow 01 */
+	box-shadow: 0px 20px 25px 0px rgba(76, 103, 100, 0.10);
+	max-width: 728px;
+	height: 258px;
+	box-sizing: border-box;
+	position: relative;
+
+}
+
+.title{
+
+	font-size: 16px;
+
+	font-weight: 600;
+	line-height: 24px; /* 150% */
+	display: flex;
+	align-items: center;
+	
+	column-gap: 12px;
+	position: absolute;
+	top: 16px;
+	left: 36px;
+}
