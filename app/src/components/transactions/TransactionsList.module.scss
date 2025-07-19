@@ -6,7 +6,6 @@
 
 	/* Shadow 01 */
 	box-shadow: 0px 20px 25px 0px rgba(76, 103, 100, 0.10);
-	width: 1104px;
 	box-sizing: border-box;
 	padding: 0px 28px 56px;
 	display: flex;
@@ -14,10 +13,17 @@
 	align-items: center;
 }
 .head {
-	display: flex;
-	width: 1048px;
 	padding: 24px 8px 16px 0;
 	border-bottom: 1px solid rgba(210, 210, 210, 0.25);
+
+	.cellContent{
+		color: var(--Default-Black, #191919);
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 24px; /* 150% */
+		text-transform: capitalize;
+		margin-bottom: 16px;
+	}
 }
 
 .text {
@@ -29,28 +35,55 @@
 }
 
 .btn{
-	color: var(--White, #FFF);
-	text-align: center;
-
-
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 24px; /* 150% */
-	text-transform: capitalize;
-	padding: 12px 24px;
-
-	border-radius: 4px;
-	background: var(--Primary-color, #299D91);
-	width: 192px;
-	box-sizing: border-box;
 	margin-top: 32px;
+	display: flex;
+	column-gap: 10px;
 }
 
 .col {
-  width: 20%;
+	width: 200px;
+}
+
+.colTransaction{
+	width: 300px;
 }
 
 .amount{
 	margin-left: auto;
 	text-align: right;
 }
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+
+tr{
+    border-bottom: 1px solid rgba(210, 210, 210, 0.25);
+	box-sizing: border-box;
+	max-height: 72px;
+	&:first-child{
+		height: 64px;
+
+	}
+}
+
+.cellContent{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	margin: 24px;
+	color: var(--Gray-01, #666);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px; /* 150% */
+}
+
+
+td.colAmount .cellContent, th.colAmount .cellContent {
+	display: block;
+	text-align: right;
+	margin-top: 24px;
+}
+

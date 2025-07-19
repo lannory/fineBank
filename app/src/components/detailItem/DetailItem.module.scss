@@ -1,0 +1,104 @@
+.project {
+	background-color: #fff;
+	width: 720px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.wrapper{
+	padding: 24px;
+}
+.img{
+	width: 100%;
+	height: 360px;
+	border-radius: 10px;
+}
+.title {
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%; /* 48px */
+	letter-spacing: -0.96px;
+	
+}
+
+.subtitle {
+	color: var(--Secondary-400, #54577A);
+
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 150%; /* 21px */
+	letter-spacing: -0.28px;
+	margin: -5px 0 5px
+}
+
+.widgets {
+	display: flex;
+	column-gap: 20px;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.price {
+	line-height: 150%; /* 36px */
+	font-size: 18px;
+	span{
+		font-weight: 600;
+	}
+}
+
+.desc {
+	margin-bottom: 10px;
+}
+
+.descTitle {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 150%; /* 36px */
+	letter-spacing: -0.72px;
+	margin-bottom: 5px;
+}
+
+.text {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 200%; /* 28px */
+}
+
+.list {
+}
+
+
+.configure{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+
+}
+
+.accsList {
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+}
+.accsItem {
+	background-color: #cfa2a2;
+	padding: 5px;
+	border-radius: 5px;
+}
+.tests{
+	margin-top: 10px;
+}
+
+.testsList {
+}
+.test {
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+
+	p{
+
+	}
+}

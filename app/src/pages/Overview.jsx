@@ -8,11 +8,11 @@ import Statistics from '../components/overview/statistics/Statistics';
 import ExpensesBreakdown from '../components/overview/expenses/ExpensesBreakdown';
 
 let data ={ 
-	transactions : [{icon: 1, title: 'GTR 5', subtitle: 'Gadget & Gea', amount: '160.00', date: '17 May 2023'},
-	{icon: 2, title: 'Polo Shirt', subtitle: 'XL fashions', amount: '20.00', date: '17 May 2023'},
-	{icon: 3, title: 'Biriyani', subtitle: 'Hajir Biriyani', amount: '10.00', date: '17 May 2023'},
-	{icon: 4, title: 'Taxi Fare', subtitle: 'Uber', amount: '12.00', date: '17 May 2023'},
-	{icon: 5, title: 'Keyboard', subtitle: 'Gadget & Gea', amount: '22.00', date: '17 May 2023'}],
+	transactions : [{icon: 'gaming', title: 'GTR 5', subtitle: 'Gadget & Gea', amount: '160.00', date: '17 May 2023'},
+		{icon: 'shopping', title: 'Polo Shirt', subtitle: 'XL fashions', amount: '20.00', date: '17 May 2023'},
+		{icon: 'food', title: 'Biriyani', subtitle: 'Hajir Biriyani', amount: '10.00', date: '17 May 2023'},
+		{icon: 'taxi', title: 'Taxi Fare', subtitle: 'Uber', amount: '12.00', date: '17 May 2023'},
+		{icon: 'shopping', title: 'Keyboard', subtitle: 'Gadget & Gea', amount: '22.00', date: '17 May 2023'}],
 	expenses: [{icon: '01', category: 'Housing', amount: '250.00', percent: '15', increase: true },
 				{icon: '02', category: 'Food', amount: '350.00', percent: '0.8', increase: '' },
 				{icon: '03', category: 'Transportation', amount: '50.00', percent: '12', increase: '' },

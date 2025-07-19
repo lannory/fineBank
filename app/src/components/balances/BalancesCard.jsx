@@ -8,7 +8,7 @@ function BalancesCard({obj, type}) {
 				<>
 					<div className={styles.header}>
 						<h5 className={styles.title}>{obj.type}</h5>
-						<p className={styles.service}>{obj.service} <img src={`../../../img/${obj.img}.png`} alt="" /></p>
+						<p className={styles.service}>{obj.service} <img src={`/${obj.img}.png`} alt="" /></p>
 					</div>
 					<div className={styles.wrapper}>
 						<div className={styles.item}>

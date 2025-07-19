@@ -10,7 +10,7 @@ export default function CardSlider(card = {number: '1111 2222 3333 4444', balanc
 							<p className="card-number">{'1111 2222 3333 4444'}</p>
 						</div>
 						<div className="card-extras">
-							<img src="../../img/Mastercard-Logo.png" alt="" />
+							<img src="/Mastercard-Logo.png" alt="" />
 							<div className="card-balances">
 								<p className="card-balance">${1}</p>
 								<div className="card-link">

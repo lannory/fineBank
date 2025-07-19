@@ -1,25 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SectionTitle from './../components/sectionTiltle/SectionTitle';
 import TransactionsNav from '../components/transactions/TransactionsNav';
 import TransactionsList from '../components/transactions/TransactionsList'
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchTransactions } from '../store/transactionsSlice';
 
 function Transactions(props) {
-	const arr = [
-		{icon: 'gaming', title: 'GTR 5', shop: 'Gadget & Gear', date: '17 May, 2023', amount: '160.00' },
-		{icon: 'shopping', title: 'Polo shirt', shop: 'XL fashions', date: '17 May, 2023', amount: '20.00' },
-		{icon: 'food', title: 'Biriyani', shop: 'Hajir Biriyani', date: '17 May, 2023', amount: '12.00' },
-		{icon: 'movie', title: 'Movie ticket', shop: 'Inox', date: '17 May, 2023', amount: '15.00' },
-		{icon: 'taxi', title: 'Taxi fare', shop: 'Uber', date: '17 May, 2023', amount: '10.00' },
-		{icon: 'food', title: 'Pizza', shop: 'Pizza Hit', date: '17 May, 2023', amount: '20.00' },
-		{icon: 'gaming', title: 'Keyboard', shop: 'Gadget & Gear', date: '17 May, 2023', amount: '30.00' }
 
-	]
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		dispatch(fetchTransactions());
+	}, [])
+
+	const transactions = useSelector(state => state.transactions.transactions);
+	const filtredTransactions = useSelector(state => state.transactions.filtredTransactions);
+	const isFiltred = useSelector(state => state.transactions.isFiltred);
+
+
+	if(!transactions){
+		return <p>Loading</p>;
+	}
+	
+
 
 	return (
 		<div className='transactions'> 
 			<SectionTitle text='Recent Transaction' className={'mb16'}/>
 			<TransactionsNav/>
-			<TransactionsList arr={arr}/>
+			{/* {arr.length < 1 ? <button onClick={getData}>get data</button> : ''} */}
+			<TransactionsList arr={isFiltred? filtredTransactions : transactions}/>
 		</div>
 	);
 }

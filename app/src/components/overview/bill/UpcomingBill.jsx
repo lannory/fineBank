@@ -14,7 +14,7 @@ function UpcomingBill(props) {
             <p className={styles['day']}>15</p>
           </div>
           <div className={styles['desc']}>
-            <img src="../../../img/Figma.png" alt="Figma logo" />
+            <img src="/Figma.png" alt="Figma logo" />
             <h4 className={styles['title']}>Figma - Monthly</h4>
             <p className={styles['text']}>Last Charge - 14 May, 2022</p>
           </div>
@@ -27,7 +27,7 @@ function UpcomingBill(props) {
             <p className={styles['day']}>15</p>
           </div>
           <div className={styles['desc']}>
-            <img src="../../../img/Adobe.png" alt="Adobe logo" />
+            <img src="/Adobe.png" alt="Adobe logo" />
             <h4 className={styles['title']}>Adobe - Yearly</h4>
             <p className={styles['text']}>Last Charge - 17 Jun, 2023</p>
           </div>

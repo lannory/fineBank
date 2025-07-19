@@ -73,5 +73,4 @@ button:focus-visible {
 }
 body{
   color: var(--Default-Black, #191919);
-  overflow: hidden;
 }

@@ -1,0 +1,51 @@
+.nav {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	margin-bottom: 16px;
+}
+
+.btn {
+	padding: 8px;
+	background-color: #ffffff;
+	color: #525256;
+	text-align: center;
+	border-radius: 8px;
+
+	font-size: 16px;
+	font-style: normal;
+	line-height: 24px; /* 150% */
+	text-transform: capitalize;
+}
+
+.searchBtn {
+	position: absolute;
+	top: 16px;
+	right: 10px;
+}
+
+.dropdown {
+}
+
+.showBtn{
+}
+
+.sortBtn{
+
+}
+
+form{
+	position: relative;
+}
+
+.modal{
+
+}
+
+.searchInput{
+	width: 200px;
+	background-color: #fff;
+	padding: 12px;
+	border-radius: 10px;
+
+}

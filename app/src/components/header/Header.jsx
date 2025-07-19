@@ -1,6 +1,10 @@
+import moment from 'moment';
 import './Header-module.scss';
 
 export function Header (){
+
+	const date = moment(Date.now()).format('LL')
+
 	return <header>
 				<div className="hi-menu">
 					<h3 className="header-title">Hello Tanzir</h3>
@@ -8,7 +12,7 @@ export function Header (){
 						<path d="M13 17L18 12L13 7" stroke="#9F9F9F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 						<path d="M6 17L11 12L6 7" stroke="#9F9F9F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 					</svg>
-					<p className="header-date">May 19, 2023</p>
+					<p className="header-date">{date}</p>
 				</div>
 				<div className="header-nav">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

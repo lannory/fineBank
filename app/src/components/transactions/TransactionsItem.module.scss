@@ -5,8 +5,7 @@
 	box-sizing: border-box;
 	padding: 16px 0;
 	border-bottom: 1px solid var(--Special-BG, rgba(210, 210, 210, 0.25));
-
-}
+}	
 .item {
 	display: flex;
 	align-items: center;
@@ -16,7 +15,7 @@
 	}
 }
 .itemTitle{
-	color: #191919 !important;
+	color: #191919;
 }
 
 .text {
@@ -35,6 +34,3 @@
 	text-align: right;
 }
 
-.col{
-	width: 20%;
-}

@@ -12,7 +12,7 @@ export default function SideProfile (){
 			<p>Logout</p>
 		</button>
 		<div className="profile">
-			<img src="../../img/profile.svg" alt="" />
+			<img src="/profile.svg" alt="" />
 			<div className="profile-text">
 				<h4 className="profile-title">Tanzir Rahman</h4>
 				<a className="profile-link">View profile</a>

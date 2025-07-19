@@ -6,7 +6,7 @@ function TransactionCard({transaction}) {
 	return (
 		<div className={styles.card}>
 			<img
-				src={`../../../img/transactions/0${transaction.icon}.svg`}
+				src={`/transactions/${transaction.icon}.svg`}
 				alt="Transaction Icon"
 				className={styles.icon}
 			/>

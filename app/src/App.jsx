@@ -9,6 +9,9 @@ import Overview from './pages/Overview';
 import Balances from './pages/Balances';
 import { BrowserRouter,Routes, Route } from 'react-router'
 import Transactions from './pages/Transactions';
+import ItemsPage from './pages/ItemsPage';
+import CreateItem from './pages/CreateItem';
+import DetailItemPage from './pages/DetailItemPage';
 
 function App() {
 
@@ -24,6 +27,9 @@ function App() {
               <Route path='/overview' element={<Overview/>}/>
               <Route path='/balances' element={<Balances/>}/>
               <Route path='/transactions' element={<Transactions/>}/>
+              <Route path='/items' element={<ItemsPage/>}/>
+              <Route path='/createitem' element={<CreateItem/>}/>
+              <Route path='/items/:id' element={<DetailItemPage/>}></Route>
             </Routes>
           </main>
         </div>

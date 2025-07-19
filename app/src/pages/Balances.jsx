@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Balances.scss'
 import SectionTitle from './../components/sectionTiltle/SectionTitle';
 import BalancesList from '../components/balances/BalancesList';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchBalances } from '../store/balanceSlice';
 
 let arr = [{service: 'Master Card', img: 'Mastercard-Logo', amount: 25000, card: '3388 4556  8860 8***', type: 'Credit Card' },
 			{service: 'AB Bank Ltd', img: 'Visa_Logo', amount: 25000, card: '693 456  69 9****', type: 'Checking' },
@@ -12,6 +14,17 @@ let arr = [{service: 'Master Card', img: 'Mastercard-Logo', amount: 25000, card:
 
 
 function Balances(props) {
+
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		dispatch(fetchBalances())
+	}, [])
+
+	const balances = useSelector(state => state.balance.balances)
+
+	console.log(balances)
+
 	return (
 		<div className='balances-wrapper'>
 			<SectionTitle text='Balances' className={'mb16'}/>

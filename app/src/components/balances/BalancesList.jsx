@@ -4,6 +4,7 @@ import BalancesCard from './BalancesCard';
 
 
 function BalancesList({balances}) {
+
 	return (
 		<div className={styles.wrapper}>
 			{balances.map(item => <BalancesCard key={item.card} obj={item}/>)}
