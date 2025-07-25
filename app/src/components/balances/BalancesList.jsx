@@ -7,7 +7,7 @@ function BalancesList({balances}) {
 
 	return (
 		<div className={styles.wrapper}>
-			{balances.map(item => <BalancesCard key={item.card} obj={item}/>)}
+			{balances.map(item => <BalancesCard key={item.cardNumber} obj={item}/>)}
 			<BalancesCard type='settings'/> 
 		</div>
 	);

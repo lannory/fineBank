@@ -3,16 +3,16 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import styles from './ItemsForm.module.scss';
 import BigBtn from '../btns/BigBtn';
 import SelectTransaction from './SelectTransaction';
-import { useDispatch } from 'react-redux';
-import { addItem } from '../../store/itemsSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { addItem, postItems } from '../../store/itemsSlice';
 import { useNavigate } from 'react-router';
-
+import moment from 'moment';
 
 function ItemsForm(props) {
 
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
-
+	const transactions = useSelector(state => state.transactions.transactions);
 
 	return (
 		<Formik
@@ -30,17 +30,20 @@ function ItemsForm(props) {
 				const img = await response.json();
 				console.log(img);
 
+				const buyPrice = (transactions.find(transaction => transaction.id === values.select)).amount * -1;
+
 				console.log(values.accs)
 
 				const obj = {
 					id: Date.now(),
 					title: values.title,
 					desc: values.desc,
-					buyDate: values.purchase,
-					transactionId: values.select,
+					buyDate: moment(values.purchase, 'YYYY-MM-DD').format('ll'),
+					buyTransactionId: values.select,
 					img,
 					cond: values.cond,
 					accs: [...values.accs],
+					buyPrice,
 					tests: [
 						{type: 'no sd errors', isCompleted: false},
 						{type: 'overheating', isCompleted: false},
@@ -48,7 +51,8 @@ function ItemsForm(props) {
 						{type: 'false', isCompleted: false}
 					]
 				}
-				dispatch(addItem(obj))
+				dispatch(postItems(obj))
+				console.log('item posted')
 				navigate('/items')
 			}}
 		>
@@ -98,6 +102,7 @@ function ItemsForm(props) {
 							<SelectTransaction 
 								value={field.value}
 								onChange={value => form.setFieldValue('select', value)}
+								filtredBy='eBay'
 							/>
 						)}
 					</Field>
@@ -109,7 +114,6 @@ function ItemsForm(props) {
 						name="img"
 						className={styles.input}
 						onChange={(event) => {
-							console.log(123)
 							setFieldValue('img', event.currentTarget.files[0]);
           			}}
         		/>
@@ -129,7 +133,7 @@ function ItemsForm(props) {
 						Mounts
 					</label>
 				</div>
-				<BigBtn disabled={isSubmitting} text='create item'/>
+				<BigBtn disabled={isSubmitting} text='create item' type='submit'/>
 			</Form>
 			)}
 			

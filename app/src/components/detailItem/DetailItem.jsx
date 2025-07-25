@@ -2,21 +2,22 @@ import React from 'react';
 import styles from './DetailItem.module.scss'
 import { SettingOutlined } from '@ant-design/icons';
 import { useDispatch } from 'react-redux';
-import { testDone } from '../../store/itemsSlice';
+import { editItems, testDone } from '../../store/itemsSlice';
 
-function DetailItem({obj}) {
+function DetailItem({obj, openConfiguration}) {
 	
 	const dispatch = useDispatch()
-
+	
 	return (
 		<div className={styles.project}>
-			<img src="/uploads/item.png" alt="" className={styles.img} />
+			<img src={`/uploads/${obj.img}`} alt="" className={styles.img} />
 			<div className={styles.wrapper}>
 				<h2 className={styles.title}>{obj.title}</h2>
 				<p className={styles.subtitle}>Condition: {obj.cond}</p>
 				<div className={styles.widgets}>
 					<div className={styles.price}>Bought: <span>{obj.buyPrice}</span> uah</div>
-					<div className={styles.price}>Sold: <span>{obj.sellPrice || 'not sold yet'}</span> {obj.sellPrice && 'uah'}</div>
+					<div className={styles.price}>All spends: <span>{obj.totalPrice || obj.buyPrice}</span> uah</div>
+					<div className={styles.price}>Sold: <span>{obj.sellPrice && ' uah' || 'not sold yet'}</span></div>
 				</div>
 				<div className={styles.widgets}>
 					<div className={styles.price}>Bought: <span>{obj.buyDate}</span></div>
@@ -46,15 +47,19 @@ function DetailItem({obj}) {
 					</h3>
 					<div className={styles.testsList}>
 						{obj.tests.map(({type, isCompleted}) =>
-							<div className={styles.test}>
-								<input type="checkbox" checked={isCompleted} onChange={() => dispatch(testDone({id: obj.id, type}))}/>
+							<div className={styles.test} key={type}>
+								<input type="checkbox" checked={isCompleted} onChange={() => {
+										const tmp = {...obj, tests: obj.tests.map(t=> t.type == type ? {...t, isCompleted: !t.isCompleted} : t)}
+										dispatch(testDone({id: obj.id, type}));
+										dispatch(editItems({data: tmp, id: obj.id}));
+									}}/>
 								<p>{type}</p>
 							</div>
 						)}
 					</div>
 				</div>
 			</div>
-			<button className={styles.configure}>
+			<button className={styles.configure} onClick={() => openConfiguration()}>
 				<SettingOutlined />
 			</button>
 		</div>

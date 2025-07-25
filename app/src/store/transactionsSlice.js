@@ -1,4 +1,4 @@
-import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
+import {createAsyncThunk, createSlice, nanoid} from '@reduxjs/toolkit';
 import axios from 'axios'
 
 const initialState = {
@@ -8,6 +8,27 @@ const initialState = {
 	activePage: 0,
 	showAmount: 7
 }
+
+export const postTransactions = createAsyncThunk(
+	'transactions/postTransactions',
+	async (data) =>{
+		console.log(data)
+		try{
+			const response = await fetch('http://localhost:3001/transactions', {
+				method: 'POST', 
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({...data, id: nanoid()})
+			});
+			const res = response.json();
+			console.log(res)
+		}catch(error){
+			console.log(error)
+		}
+	}
+)
+
 export const fetchTransactions = createAsyncThunk(
 	'transactions/fetchTransactions',
 	async (_, {rejectWithValue}) => {
@@ -30,9 +51,6 @@ const transactionsSlice = createSlice({
 	initialState,
 	name: 'transactions',
 	reducers: {
-		test: (state, action) => {
-
-		},
 		toggleShowMore: (state, action) => {
 			state.showAmount += 7;
 		}, 
@@ -49,6 +67,11 @@ const transactionsSlice = createSlice({
 			}else if(state.activePage === 2){
 				state.filtredTransactions = state.transactions.filter(item => item.amount < 0);
 			}
+		},
+		addTransaction: (state, action) =>{
+			const id = nanoid();
+			state.transactions.push({...action.payload, id});
+			console.log(state.transactions)
 		}
 	},
 	extraReducers: (builder) =>{
@@ -68,6 +91,6 @@ const transactionsSlice = createSlice({
 	
 });
 
-export const {test, toggleShowMore, switchPage, filterTransactions, toggleShowLess} = transactionsSlice.actions;
+export const {toggleShowMore, switchPage, filterTransactions, toggleShowLess, addTransaction} = transactionsSlice.actions;
 
 export default transactionsSlice.reducer;

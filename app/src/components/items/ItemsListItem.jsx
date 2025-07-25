@@ -4,7 +4,7 @@ import {MoreOutlined, DeleteOutlined, EditOutlined} from '@ant-design/icons';
 import { Dropdown, Space } from 'antd';
 import { useNavigate } from 'react-router';
 import { useDispatch } from 'react-redux';
-import {deleteItem} from '../../store/itemsSlice';
+import {deleteItem, deleteItems} from '../../store/itemsSlice';
 
  
 
@@ -26,6 +26,7 @@ function ItemsListItem({obj}) {
     key: '2',
     onClick: () => {
       dispatch(deleteItem(obj.id));
+      dispatch(deleteItems({id: obj.id}));
     },
     label: (
       <button>
@@ -44,8 +45,8 @@ function ItemsListItem({obj}) {
       <div className={styles.item} onClick={() => navigate(`/items/${obj.id}`)}>
         <img src={`/uploads/${obj.img}`} alt="" className={styles.img} />
         <h2 className={styles.title}>{obj.title}</h2>
-        <p className={styles.price}>{obj.buyPrice}$</p>
-        <p className={styles.price}>{obj.sellPrice}$</p>
+        <p className={styles.price}>{obj.buyPrice}₴</p>
+        <p className={styles.price}>{obj.sellPrice}₴</p>
         <p className={styles.date}>{obj.buyDate}</p>
         <p className={styles.date}>{obj.sellDate}</p>
       </div>

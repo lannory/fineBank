@@ -8,17 +8,23 @@ const initialState = {
 export const fetchBalances = createAsyncThunk(
 	'balances/fetchbalances',
 	async (state, action) => {
-		
+		const response = await fetch(`https://api.monobank.ua/personal/client-info`, {
+			headers: {"X-token": API_KEY} 
+		})
 		const data = await response.json();
 
 		return data;
 	}
-					
 )
 
 const balanceSlice = createSlice({
 	name: 'balance',
 	initialState,
+	reducers: {
+		addCard: (state, action)=>{
+			state.balances.push(action.payload)
+		}
+	},
 	extraReducers: (builder) => {
 		builder
 		.addCase(fetchBalances.fulfilled, (state, action) => {
@@ -30,7 +36,8 @@ const balanceSlice = createSlice({
 					balance: card.balance / 100,
 					currency,
 					cardNumber: card.maskedPan[0],
-					type: card.type
+					type: card.type,
+					fromApi: true
 				}
 
 				return newObj

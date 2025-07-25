@@ -6,10 +6,10 @@ import moment from 'moment';
 
 const {Option} = Select;
 
-function SelectTransaction({value, onChange}) {
+function SelectTransaction({value, onChange, filtredBy}) {
 
 	const transactions = useSelector(state => state.transactions.transactions);
-	const filtredTransactions = transactions.filter(transaction => transaction.description === 'eBay')
+	const filtredTransactions = filtredBy === 'amount' ? transactions.filter(transaction => transaction.amount > 0) : transactions.filter(transaction => transaction.description === filtredBy);
 
 	return (
 		<div className={styles.wrapper}>
@@ -23,7 +23,7 @@ function SelectTransaction({value, onChange}) {
 					<Option key={item.id} value={item.id}>
 						<div className={styles.option}>
 							<div className={styles.date}>{moment(item.time).format('LLL')}</div>
-							<div className={styles.amount}>{-1 * item.amount} uah</div>
+							<div className={styles.amount}>{item.amount} uah</div>
 						</div>
           			</Option>
 				)}

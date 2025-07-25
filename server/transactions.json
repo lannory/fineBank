@@ -1,542 +1,674 @@
 [
   {
+    "amount": 1222,
+    "type": "ukrgas",
+    "time": 1753449660000,
+    "description": "eBay",
+    "id": "DpcSFc9obL1TFQ3UyDzWN"
+  },
+  {
+    "amount": -5902.37,
+    "description": "eBay",
+    "time": 1753047333000,
+    "id": "y8BfZxKTSnj5qupuLw",
+    "type": "mono"
+  },
+  {
+    "amount": -68,
+    "description": "Нова пошта",
+    "time": 1753028547000,
+    "id": "J-IFP7ElzzfFIAN1ww",
+    "type": "mono"
+  },
+  {
+    "amount": -27.99,
+    "description": "Червоний Маркет",
+    "time": 1752917133000,
+    "id": "FkzetTxH3zvrQnwhag",
+    "type": "mono"
+  },
+  {
+    "amount": -8,
+    "description": "Київське метро",
+    "time": 1752915107000,
+    "id": "e3hecMxEKKNaCb3eGg",
+    "type": "mono"
+  },
+  {
     "amount": -415.9,
     "description": "Meest",
     "time": 1752858835000,
-    "id": "gyJaB7zEQsuo4zHMow"
+    "id": "gyJaB7zEQsuo4zHMow",
+    "type": "mono"
   },
   {
     "amount": -35,
     "description": "Укрпошта",
     "time": 1752854275000,
-    "id": "Ric9tThB25zULeF3oQ"
+    "id": "Ric9tThB25zULeF3oQ",
+    "type": "mono"
+  },
+  {
+    "amount": 123,
+    "type": "dasd",
+    "time": 1752761040000,
+    "description": "asd",
+    "id": "cDous8G7x2Xp149Fwt_kY"
   },
   {
     "amount": -291.13,
     "description": "Meewqeqweqwewqest",
     "time": 1752756559009,
-    "id": "u4lWlweweeqweqwewOas-kERvlY2A"
+    "id": "u4lWlweweeqweqwewOas-kERvlY2A",
+    "type": "test"
   },
   {
     "amount": -291.13,
     "description": "Meest",
     "time": 1752756559000,
-    "id": "u4lWlwOas-kERvlY2A"
+    "id": "u4lWlwOas-kERvlY2A",
+    "type": "mono"
   },
   {
     "amount": 1350,
     "description": "Від: Andrishak Uliana",
     "time": 1752756244000,
-    "id": "A0e6hSvn__wZnazeRw"
+    "id": "A0e6hSvn__wZnazeRw",
+    "type": "mono"
   },
   {
     "amount": -209.63,
     "description": "Spotify",
     "time": 1752681954000,
-    "id": "k8S9SSGHAICS4Fjlhw"
+    "id": "k8S9SSGHAICS4Fjlhw",
+    "type": "mono"
   },
   {
     "amount": 8700,
     "description": "Від: Kaliberda Oleksandr",
     "time": 1752677204000,
-    "id": "sZ7GuKdag-zSr4HsZQ"
+    "id": "sZ7GuKdag-zSr4HsZQ",
+    "type": "mono"
   },
   {
     "amount": -8,
     "description": "Київське метро",
     "time": 1752655348000,
-    "id": "6FGg1BcYcMwm8S47Zg"
+    "id": "6FGg1BcYcMwm8S47Zg",
+    "type": "mono"
   },
   {
     "amount": 2850,
     "description": "Від: Vakhula Yurii",
     "time": 1752649313000,
-    "id": "zYnvScivGiksB-e8HA"
+    "id": "zYnvScivGiksB-e8HA",
+    "type": "mono"
   },
   {
     "amount": 8200,
     "description": "Від: Danov Aleksandr",
     "time": 1752645163000,
-    "id": "uCH-fcl7xjd5xUl_DA"
+    "id": "uCH-fcl7xjd5xUl_DA",
+    "type": "mono"
   },
   {
     "amount": -35,
     "description": "London kafe",
     "time": 1752593412000,
-    "id": "-unVFDtbVRNMDEB7vg"
+    "id": "-unVFDtbVRNMDEB7vg",
+    "type": "mono"
   },
   {
     "amount": -215,
     "description": "Нова пошта",
     "time": 1752579271000,
-    "id": "yW-YdSq8OVu3i0PqqA"
+    "id": "yW-YdSq8OVu3i0PqqA",
+    "type": "mono"
   },
   {
     "amount": 4300,
     "description": "Від: Esko Denys",
     "time": 1752561393000,
-    "id": "GxMuMz83bLLlRvsCKg"
+    "id": "GxMuMz83bLLlRvsCKg",
+    "type": "mono"
   },
   {
     "amount": 150,
     "description": "Від: Vakhula Yurii",
     "time": 1752521074000,
-    "id": "HWOLvGh-yT69iqkXvQ"
+    "id": "HWOLvGh-yT69iqkXvQ",
+    "type": "mono"
   },
   {
     "amount": -4369.01,
     "description": "eBay",
     "time": 1752520491000,
-    "id": "GJBrzSaNwcrNftKuRw"
+    "id": "GJBrzSaNwcrNftKuRw",
+    "type": "mono"
   },
   {
     "amount": 150,
     "description": "Від: Andrishak Uliana",
     "time": 1752511848000,
-    "id": "7LTWxsoSs4IVsTcQJA"
+    "id": "7LTWxsoSs4IVsTcQJA",
+    "type": "mono"
   },
   {
     "amount": 12500,
     "description": "Від: Yavnyi Oleksii",
     "time": 1752506703000,
-    "id": "epQaALxE8zcFygIHBw"
+    "id": "epQaALxE8zcFygIHBw",
+    "type": "mono"
   },
   {
     "amount": 11200,
     "description": "Від: Kumar Anton",
     "time": 1752505134000,
-    "id": "S1Lu3HE0t0sJZAD86Q"
+    "id": "S1Lu3HE0t0sJZAD86Q",
+    "type": "mono"
   },
   {
     "amount": -291.13,
     "description": "Meest",
     "time": 1752503452000,
-    "id": "AO-uLxGVGsdHRyM_qA"
+    "id": "AO-uLxGVGsdHRyM_qA",
+    "type": "mono"
   },
   {
     "amount": -8,
     "description": "Київське метро",
     "time": 1752497937000,
-    "id": "1717OdDPb93a4HOhQQ"
+    "id": "1717OdDPb93a4HOhQQ",
+    "type": "mono"
   },
   {
     "amount": -8,
     "description": "Київське метро",
     "time": 1752493495000,
-    "id": "KT9xrIUl7ljmPsuBRw"
+    "id": "KT9xrIUl7ljmPsuBRw",
+    "type": "mono"
   },
   {
     "amount": 300,
     "description": "Від: Богдан Мяхкоходов",
     "time": 1752487851000,
-    "id": "86_9WQwlrjDIl8Ozmw"
+    "id": "86_9WQwlrjDIl8Ozmw",
+    "type": "mono"
   },
   {
     "amount": 900,
     "description": "Від: Kohut Yaroslav",
     "time": 1752482974000,
-    "id": "GzMAyYTSetp6rlYDzg"
+    "id": "GzMAyYTSetp6rlYDzg",
+    "type": "mono"
   },
   {
     "amount": 200,
     "description": "Від: Yesko Denys",
     "time": 1752476551000,
-    "id": "ADgq0cwSGJD9pmGGZQ"
+    "id": "ADgq0cwSGJD9pmGGZQ",
+    "type": "mono"
   },
   {
     "amount": -169,
     "description": "McDonald’s",
     "time": 1752436307000,
-    "id": "kAdze2z1xBWeqXAGTQ"
+    "id": "kAdze2z1xBWeqXAGTQ",
+    "type": "mono"
   },
   {
     "amount": -7197.11,
     "description": "eBay",
     "time": 1752420899000,
-    "id": "zPXRDfHESjT2mb9NWQ"
+    "id": "zPXRDfHESjT2mb9NWQ",
+    "type": "mono"
   },
   {
     "amount": 9750,
     "description": "Від: Shyriaev Yura",
     "time": 1752416693000,
-    "id": "sDCJikzrtIjdtFEFLg"
+    "id": "sDCJikzrtIjdtFEFLg",
+    "type": "mono"
   },
   {
     "amount": -100,
     "description": "Максим Н.",
     "time": 1752410286000,
-    "id": "Wsb39L09QbxpGe5M7g"
+    "id": "Wsb39L09QbxpGe5M7g",
+    "type": "mono"
   },
   {
     "amount": -200,
     "description": "Максим Б.",
     "time": 1752406911000,
-    "id": "SeRyL_YrtfdetN3gbQ"
+    "id": "SeRyL_YrtfdetN3gbQ",
+    "type": "mono"
   },
   {
     "amount": -28.29,
     "description": "Сільпо",
     "time": 1752335665000,
-    "id": "ZA_N2OZA4lB7DCIBEQ"
+    "id": "ZA_N2OZA4lB7DCIBEQ",
+    "type": "mono"
   },
   {
     "amount": 9700,
     "description": "Від: Oryshchuk Oleksandr",
     "time": 1752332183000,
-    "id": "yLU9rCKH9YiYKHeTRg"
+    "id": "yLU9rCKH9YiYKHeTRg",
+    "type": "mono"
   },
   {
     "amount": -1070.83,
     "description": "allnutrition.ua",
     "time": 1752316506000,
-    "id": "nsL0edAUxvoyMPje4A"
+    "id": "nsL0edAUxvoyMPje4A",
+    "type": "mono"
   },
   {
     "amount": 2200,
     "description": "Від: Chaplynskyi Taras",
     "time": 1752312353000,
-    "id": "F06zXcTZ9naACBTYhg"
+    "id": "F06zXcTZ9naACBTYhg",
+    "type": "mono"
   },
   {
     "amount": -336.08,
     "description": "eBay",
     "time": 1752245458000,
-    "id": "-BZVgsz2o4y2YAswxA"
+    "id": "-BZVgsz2o4y2YAswxA",
+    "type": "mono"
   },
   {
     "amount": -5460.85,
     "description": "eBay",
     "time": 1752245401000,
-    "id": "IMiTKCMtBKk00utVBQ"
+    "id": "IMiTKCMtBKk00utVBQ",
+    "type": "mono"
   },
   {
     "amount": 800,
     "description": "Від: #traceable #traceable",
     "time": 1752244565000,
-    "id": "Qb0RhxddRcIe3APGIQ"
+    "id": "Qb0RhxddRcIe3APGIQ",
+    "type": "mono"
   },
   {
     "amount": -207.95,
     "description": "Meest",
     "time": 1752237780000,
-    "id": "B9xc9HUQfyVfIRiRvw"
+    "id": "B9xc9HUQfyVfIRiRvw",
+    "type": "mono"
   },
   {
     "amount": 100,
     "description": "Від: Ярослав Когут",
     "time": 1752219072000,
-    "id": "eh7cbR-vE1w42-9V9A"
+    "id": "eh7cbR-vE1w42-9V9A",
+    "type": "mono"
   },
   {
     "amount": 200,
     "description": "Від: FUIB MoneyTransfer",
     "time": 1752169896000,
-    "id": "DjbYXf7EVBdIAhi6Nw"
+    "id": "DjbYXf7EVBdIAhi6Nw",
+    "type": "mono"
   },
   {
     "amount": 610,
     "description": "Від: #traceable #traceable",
     "time": 1752161039000,
-    "id": "i3WkcSK-KNbTgODexg"
+    "id": "i3WkcSK-KNbTgODexg",
+    "type": "mono"
   },
   {
     "amount": 200,
     "description": "Від: Тарас Чаплинський",
     "time": 1752152076000,
-    "id": "S_eypcirUBpbYGhy5A"
+    "id": "S_eypcirUBpbYGhy5A",
+    "type": "mono"
   },
   {
     "amount": 1400,
     "description": "Від: Savchenko Stanislav",
     "time": 1752146233000,
-    "id": "ELeX51Zm3Ewa7IRnNA"
+    "id": "ELeX51Zm3Ewa7IRnNA",
+    "type": "mono"
   },
   {
     "amount": 1435,
     "description": "Від: #traceable #traceable",
     "time": 1752138214000,
-    "id": "CWztYeq4Mz3xner-hQ"
+    "id": "CWztYeq4Mz3xner-hQ",
+    "type": "mono"
   },
   {
     "amount": -7810.03,
     "description": "eBay",
     "time": 1752072515000,
-    "id": "HeBafCYwH0XEF9D0TQ"
+    "id": "HeBafCYwH0XEF9D0TQ",
+    "type": "mono"
   },
   {
     "amount": -291.13,
     "description": "Meest",
     "time": 1752063104000,
-    "id": "qwFrqEUMdA9h95Olow"
+    "id": "qwFrqEUMdA9h95Olow",
+    "type": "mono"
   },
   {
     "amount": 610,
     "description": "Від: #traceable #traceable",
     "time": 1751991256000,
-    "id": "KaV49dCLItrr_WQWkw"
+    "id": "KaV49dCLItrr_WQWkw",
+    "type": "mono"
   },
   {
     "amount": -436.48,
     "description": "Meest",
     "time": 1751990771000,
-    "id": "H5eJYU3vNF_kJhcmxQ"
+    "id": "H5eJYU3vNF_kJhcmxQ",
+    "type": "mono"
   },
   {
     "amount": 100,
     "description": "Від: Savchenko Stanislav",
     "time": 1751990628000,
-    "id": "xKtkq-RqWJJqIG_cFg"
+    "id": "xKtkq-RqWJJqIG_cFg",
+    "type": "mono"
   },
   {
     "amount": 1650,
     "description": "Від: Ilchyshyn Oleh",
     "time": 1751978205000,
-    "id": "w2imEsy1ZCdwRsx7HQ"
+    "id": "w2imEsy1ZCdwRsx7HQ",
+    "type": "mono"
   },
   {
     "amount": 1500,
     "description": "Від: Khomenko Arsen",
     "time": 1751975244000,
-    "id": "v7xT9mOCAt2Ql0ZVIg"
+    "id": "v7xT9mOCAt2Ql0ZVIg",
+    "type": "mono"
   },
   {
     "amount": 1140,
     "description": "Від: Puzko Borys",
     "time": 1751958864000,
-    "id": "JAxkuH96wNvNcDEqsA"
+    "id": "JAxkuH96wNvNcDEqsA",
+    "type": "mono"
   },
   {
     "amount": -8,
     "description": "Київське метро",
     "time": 1751956616000,
-    "id": "Me9bfzQ1_-K3loet0A"
+    "id": "Me9bfzQ1_-K3loet0A",
+    "type": "mono"
   },
   {
     "amount": 425,
     "description": "Від: #traceable #traceable",
     "time": 1751911923000,
-    "id": "H7pK7rHqZodZQI39qw"
+    "id": "H7pK7rHqZodZQI39qw",
+    "type": "mono"
   },
   {
     "amount": 60,
     "description": "Від: Борис Пузько",
     "time": 1751890899000,
-    "id": "Y7V_nNC4QHOciUSm3Q"
+    "id": "Y7V_nNC4QHOciUSm3Q",
+    "type": "mono"
   },
   {
     "amount": -179,
     "description": "Uklon",
     "time": 1751877206000,
-    "id": "8hh086QnQyG4-cq3AQ"
+    "id": "8hh086QnQyG4-cq3AQ",
+    "type": "mono"
   },
   {
     "amount": -1238.56,
     "description": "CHMELI SUNELI KUCHNIA GRU",
     "time": 1751749147000,
-    "id": "OgRVSHQq7LYfQ5yNZQ"
+    "id": "OgRVSHQq7LYfQ5yNZQ",
+    "type": "mono"
   },
   {
     "amount": -578.75,
     "description": "Bolt",
     "time": 1751732158000,
-    "id": "3OVltHS2fzbLGGbKTw"
+    "id": "3OVltHS2fzbLGGbKTw",
+    "type": "mono"
   },
   {
     "amount": -59.4,
     "description": "SSP HELLAS PRET A MANG",
     "time": 1751716076000,
-    "id": "uqVlmdS0WNcJgZVSzg"
+    "id": "uqVlmdS0WNcJgZVSzg",
+    "type": "mono"
   },
   {
     "amount": -49,
     "description": "Yakaboo",
     "time": 1751705969000,
-    "id": "712GIwrL0CnCpon_dw"
+    "id": "712GIwrL0CnCpon_dw",
+    "type": "mono"
   },
   {
     "amount": 150,
     "description": "Від: Олег Ільчишин",
     "time": 1751703940000,
-    "id": "m6JHykeS5Fid-K2IYw"
+    "id": "m6JHykeS5Fid-K2IYw",
+    "type": "mono"
   },
   {
     "amount": 1500,
     "description": "Від: Iverchuk Andrii",
     "time": 1751637934000,
-    "id": "8MN9pMMStaVFPqeJxw"
+    "id": "8MN9pMMStaVFPqeJxw",
+    "type": "mono"
   },
   {
     "amount": -7043.26,
     "description": "eBay",
     "time": 1751534576000,
-    "id": "Xem6UW_ReNA_R45p-w"
+    "id": "Xem6UW_ReNA_R45p-w",
+    "type": "mono"
   },
   {
     "amount": 8200,
     "description": "Від: Nevdachyn Mykhailo",
     "time": 1751527983000,
-    "id": "IpH4VWLeKppzHtEttA"
+    "id": "IpH4VWLeKppzHtEttA",
+    "type": "mono"
   },
   {
     "amount": 600,
     "description": "Від: #traceable #traceable",
     "time": 1751448432000,
-    "id": "JGacak3KQytIGYVeMA"
+    "id": "JGacak3KQytIGYVeMA",
+    "type": "mono"
   },
   {
     "amount": -24.73,
     "description": "MYLONA BAKERY",
     "time": 1751280022000,
-    "id": "4nl-4oQk3H1vKpsW_A"
+    "id": "4nl-4oQk3H1vKpsW_A",
+    "type": "mono"
   },
   {
     "amount": -135,
     "description": "lifecell",
     "time": 1751180768000,
-    "id": "bEe5aFsFPJyHIaC_LA"
+    "id": "bEe5aFsFPJyHIaC_LA",
+    "type": "mono"
   },
   {
     "amount": -587.99,
     "description": "Meest",
     "time": 1751113736000,
-    "id": "mdre2ZWfpfhFcWFkWQ"
+    "id": "mdre2ZWfpfhFcWFkWQ",
+    "type": "mono"
   },
   {
     "amount": -230.3,
     "description": "A P SPINOS",
     "time": 1751043701000,
-    "id": "VntvDR_HzDwtdKPZ7A"
+    "id": "VntvDR_HzDwtdKPZ7A",
+    "type": "mono"
   },
   {
     "amount": -185.33,
     "description": "S KEFALLINOU KAI SIA",
     "time": 1750861095000,
-    "id": "xl0AJ1FqiyfdDFNf3Q"
+    "id": "xl0AJ1FqiyfdDFNf3Q",
+    "type": "mono"
   },
   {
     "amount": -57.13,
     "description": "LOTNISKO CHOPINA 16",
     "time": 1750757541000,
-    "id": "KyXXbVdpHPq4ViYfng"
+    "id": "KyXXbVdpHPq4ViYfng",
+    "type": "mono"
   },
   {
     "amount": -57.13,
     "description": "LOTNISKO CHOPINA 16",
     "time": 1750757493000,
-    "id": "ICz6rs7EeDHK_M00OQ"
+    "id": "ICz6rs7EeDHK_M00OQ",
+    "type": "mono"
   },
   {
     "amount": -504.12,
     "description": "Meest",
     "time": 1750718941000,
-    "id": "kMOj-E3mYzhG7MxiWA"
+    "id": "kMOj-E3mYzhG7MxiWA",
+    "type": "mono"
   },
   {
     "amount": -266.14,
     "description": "Нова пошта",
     "time": 1750706468000,
-    "id": "orrwSwqlQy-PQ1Ogvw"
+    "id": "orrwSwqlQy-PQ1Ogvw",
+    "type": "mono"
   },
   {
     "amount": -146.19,
     "description": "P038 ASIA VIBE BROWARY",
     "time": 1750706272000,
-    "id": "r9yatkzETLWgqP6cUA"
+    "id": "r9yatkzETLWgqP6cUA",
+    "type": "mono"
   },
   {
     "amount": -102.08,
     "description": "Biedronka",
     "time": 1750675569000,
-    "id": "XtZgShWgg9jM8BzERg"
+    "id": "XtZgShWgg9jM8BzERg",
+    "type": "mono"
   },
   {
     "amount": -140,
     "description": "414950****2816",
     "time": 1750662713000,
-    "id": "FjTb1RdOT0G9z-eexQ"
+    "id": "FjTb1RdOT0G9z-eexQ",
+    "type": "mono"
   },
   {
     "amount": -200,
     "description": "Київстар",
     "time": 1750619848000,
-    "id": "ehGxcZ6KMyBKKmSJ2Q"
+    "id": "ehGxcZ6KMyBKKmSJ2Q",
+    "type": "mono"
   },
   {
     "amount": -175,
     "description": "Київстар",
     "time": 1750619683000,
-    "id": "FVqcP7gCE9UC_1UKtA"
+    "id": "FVqcP7gCE9UC_1UKtA",
+    "type": "mono"
   },
   {
     "amount": -84,
     "description": "Нова пошта",
     "time": 1750608284000,
-    "id": "-gQZWYlKodd_GO47OQ"
+    "id": "-gQZWYlKodd_GO47OQ",
+    "type": "mono"
   },
   {
     "amount": 80,
     "description": "Скасування. Нова пошта",
     "time": 1750607611000,
-    "id": "T-HaX1HupJeyoNq2rw"
+    "id": "T-HaX1HupJeyoNq2rw",
+    "type": "mono"
   },
   {
     "amount": -80,
     "description": "Нова пошта",
     "time": 1750607451000,
-    "id": "3WCITKoMsIfJgx2SFg"
+    "id": "3WCITKoMsIfJgx2SFg",
+    "type": "mono"
   },
   {
     "amount": -194,
     "description": "McDonald’s",
     "time": 1750535670000,
-    "id": "0Z7WU19ATAfbbkZzXg"
+    "id": "0Z7WU19ATAfbbkZzXg",
+    "type": "mono"
   },
   {
     "amount": -29.99,
     "description": "Сільпо",
     "time": 1750440816000,
-    "id": "WeZfaAakA-4Mg2Mshg"
+    "id": "WeZfaAakA-4Mg2Mshg",
+    "type": "mono"
   },
   {
     "amount": -80,
     "description": "Phone",
     "time": 1750440649000,
-    "id": "CAWxjftcEhZ3vDyYxQ"
+    "id": "CAWxjftcEhZ3vDyYxQ",
+    "type": "mono"
   },
   {
     "amount": -25,
     "description": "Дмитро П.",
     "time": 1750417969000,
-    "id": "-dfA98MfumpVDTaH0g"
+    "id": "-dfA98MfumpVDTaH0g",
+    "type": "mono"
   },
   {
     "amount": -161.5,
     "description": "Нова пошта",
     "time": 1750415680000,
-    "id": "dkc_YxnPelX2tXCz5A"
+    "id": "dkc_YxnPelX2tXCz5A",
+    "type": "mono"
   },
   {
     "amount": -1,
     "description": "Lifecell\n+380631162469",
     "time": 1750329210000,
-    "id": "ZR3noSREfExLKXzNOQ"
+    "id": "ZR3noSREfExLKXzNOQ",
+    "type": "mono"
   },
   {
     "amount": -138.8,
     "description": "Олександр Л.",
     "time": 1750327060000,
-    "id": "vxG1lMFQXPg21u-2Vg"
+    "id": "vxG1lMFQXPg21u-2Vg",
+    "type": "mono"
   },
   {
     "amount": -80,
     "description": "Нова пошта",
     "time": 1750318925000,
-    "id": "rTPGyVL7BnxuNHlwuQ"
+    "id": "rTPGyVL7BnxuNHlwuQ",
+    "type": "mono"
   },
   {
     "amount": -3122.52,
     "description": "eBay",
     "time": 1750193068000,
-    "id": "BiMVVLzi56-zjS4S1w"
+    "id": "BiMVVLzi56-zjS4S1w",
+    "type": "mono"
   }
 ]

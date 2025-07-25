@@ -1,3 +1,156 @@
-{
-	
-}
+[
+  {
+    "id": 1,
+    "title": "gopro hero 12",
+    "cond": "good",
+    "buyPrice": 7500,
+    "spendsAmount": 691.13,
+    "totalPrice": "861.13",
+    "sellPrice": 9700,
+    "sellTransaction": "23",
+    "deliveryTransactionId": "121",
+    "buyDate": "19 jun, 2025",
+    "sellDate": "22 jul, 2025",
+    "img": "item.png",
+    "desc": "lowerowerkowijefjsajfdqaojndjhnkiqhjikewdjhikqwwhjikdqhjkwedhiujqehjkqwihujewjhqejqwhkehjkqdw",
+    "accs": [
+      "battery",
+      "case",
+      "shorty",
+      "sdasd",
+      "asdd"
+    ],
+    "tests": [
+      {
+        "type": "no sd errors",
+        "isCompleted": true
+      },
+      {
+        "type": "overheating",
+        "isCompleted": true
+      },
+      {
+        "type": "micro",
+        "isCompleted": true
+      },
+      {
+        "type": "false",
+        "isCompleted": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "gopro hero 13",
+    "cond": "good",
+    "buyPrice": 9000,
+    "spendsAmount": null,
+    "totalPrice": null,
+    "sellPrice": 11000,
+    "sellTransaction": 123,
+    "deliveryTransactionId": 2123,
+    "buyDate": "23 jun, 2025",
+    "sellDate": "25 jul, 2025",
+    "img": "item.png",
+    "desc": "lowerowerkowijefjsajfdqaojndjhnkiqhjikewdjhikqwwhjikdqhjkwedhiujqehjkqwihujewjhqejqwhkehjkqdw",
+    "accs": [
+      "battery",
+      "case",
+      "mounts"
+    ],
+    "tests": [
+      {
+        "type": "no sd errors",
+        "isCompleted": true
+      },
+      {
+        "type": "overheating",
+        "isCompleted": true
+      },
+      {
+        "type": "micro",
+        "isCompleted": true
+      },
+      {
+        "type": "stab",
+        "isCompleted": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "gopro hero 11",
+    "cond": "good",
+    "buyPrice": 6000,
+    "spendsAmount": 200,
+    "totalPrice": "6200.00",
+    "sellPrice": 8700,
+    "sellTransaction": 4423,
+    "deliveryTransactionId": 9873,
+    "buyDate": "19 jun, 2025",
+    "sellDate": "11 jul, 2025",
+    "img": "item.png",
+    "desc": "lowerowerkowijefjsajfdqaojndjhnkiqhjikewdjhikqwwhjikdqhjkwedhiujqehjkqwihujewjhqejqwhkehjkqdw",
+    "accs": [
+      "battery",
+      "case",
+      "mounts"
+    ],
+    "tests": [
+      {
+        "type": "no sd errors",
+        "isCompleted": true
+      },
+      {
+        "type": "overheating",
+        "isCompleted": true
+      },
+      {
+        "type": "micro",
+        "isCompleted": true
+      },
+      {
+        "type": "stab",
+        "isCompleted": true
+      }
+    ]
+  },
+  {
+    "id": "a-EjSMmFSSIoB3GophhJD",
+    "title": "insta360 one x2",
+    "desc": "Fully functional and in great working condition\n\n• Minor scratch on one protective lens cover – doesn’t affect video quality or stitching (see photos)\n\n• Includes selfie stick, perfect for invisible shots and vlogging",
+    "buyDate": "2025-07-21",
+    "buyTransactionId": "y8BfZxKTSnj5qupuLw",
+    "img": "insta360x2.png",
+    "cond": "great",
+    "accs": [
+      "battery",
+      "invisible selfie stick"
+    ],
+    "buyPrice": 5902.37,
+    "tests": [
+      {
+        "type": "no sd errors",
+        "isCompleted": false
+      },
+      {
+        "type": "overheating",
+        "isCompleted": false
+      },
+      {
+        "type": "micro",
+        "isCompleted": false
+      },
+      {
+        "type": "false",
+        "isCompleted": false
+      }
+    ],
+    "sellPrice": 0,
+    "sellDate": "",
+    "spendsAmount": 0,
+    "sellTransaction": "",
+    "totalPrice": "5902.37",
+    "deliveryTransactionId": ""
+  }
+]

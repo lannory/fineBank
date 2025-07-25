@@ -12,6 +12,8 @@ import Transactions from './pages/Transactions';
 import ItemsPage from './pages/ItemsPage';
 import CreateItem from './pages/CreateItem';
 import DetailItemPage from './pages/DetailItemPage';
+import CreateTransaction from './pages/CreateTransaction';
+import Statistics from './pages/Statistics';
 
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
               <Route path='/items' element={<ItemsPage/>}/>
               <Route path='/createitem' element={<CreateItem/>}/>
               <Route path='/items/:id' element={<DetailItemPage/>}></Route>
+              <Route path='/createtransaction' element={<CreateTransaction/>}></Route>
+              <Route path='/statistics' element={<Statistics/>}></Route>
             </Routes>
           </main>
         </div>

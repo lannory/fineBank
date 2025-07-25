@@ -7,16 +7,16 @@ function BalancesCard({obj, type}) {
 			{type != 'settings' ? 
 				<>
 					<div className={styles.header}>
-						<h5 className={styles.title}>{obj.type}</h5>
+						<h5 className={styles.title}>{obj.fromApi ? 'mono' : ''} {obj.type}</h5>
 						<p className={styles.service}>{obj.service} <img src={`/${obj.img}.png`} alt="" /></p>
 					</div>
 					<div className={styles.wrapper}>
 						<div className={styles.item}>
-							<h3 className={styles.itemTitle}>{obj.card}</h3>
+							<h3 className={styles.itemTitle}>{obj.cardNumber}</h3>
 							<p className={styles.subtitle}>Account Number</p>
 						</div>
 						<div className={styles.item}>
-							<h3 className={styles.itemTitle}>${obj.amount}</h3>
+							<h3 className={styles.itemTitle}>{obj.balance} {obj.currency}</h3>
 							<p className={styles.subtitle}>Total amount</p>
 						</div>
 					</div>

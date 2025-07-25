@@ -1,0 +1,23 @@
+@use '../ItemsForm/ItemsForm.module.scss';
+
+.accsLabel {
+	font-size: 13px;
+}
+.miniGroup {
+	display: flex;
+
+}
+.accsAdd {
+	background-color: #fff;
+	width: 150px;
+	padding: 10px;
+
+	&::placeholder{
+		font-size: 14px;
+	}
+}
+.accsBtn {
+	background-color: #299D91;
+	padding: 10px;
+	color:#fff;
+}

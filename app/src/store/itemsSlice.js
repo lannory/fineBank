@@ -1,64 +1,83 @@
 
-import { createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice, nanoid } from '@reduxjs/toolkit';
 
 const initialState = {
-	items: [
-		{
-			id: 1,
-			title: 'gopro hero 12', 
-			cond: 'good',
-			buyPrice: 170, 
-			sellPrice: 200, 
-			buyDate: '19 jun 2025', 
-			sellDate: '22 jul 2025',
-			img: 'item.png',
-			desc: 'lowerowerkowijefjsajfdqaojndjhnkiqhjikewdjhikqwwhjikdqhjkwedhiujqehjkqwihujewjhqejqwhkehjkqdw',
-			accs: ['battery', 'case', 'shorty'],
-			tests: [
-				{type: 'no sd errors', isCompleted: true},
-				{type: 'overheating', isCompleted: true},
-				{type: 'micro', isCompleted: false},
-				{type: 'false', isCompleted: true}
-			]
-		},
-		{
-			id: 2,
-			title: 'gopro hero 13', 
-			cond: 'good',
-			buyPrice: 190, 
-			sellPrice: 220, 
-			buyDate: '23 jun 2025', 
-			sellDate: '25 jul 2025',
-			img: 'item.png',
-			desc: 'lowerowerkowijefjsajfdqaojndjhnkiqhjikewdjhikqwwhjikdqhjkwedhiujqehjkqwihujewjhqejqwhkehjkqdw',
-			accs: ['battery', 'case', 'mounts'],
-			tests: [
-				{type: 'no sd errors', isCompleted: true},
-				{type: 'overheating', isCompleted: true},
-				{type: 'micro', isCompleted: true},
-				{type: 'stab', isCompleted: false}
-			]
-		},
-		{
-			id: 3,
-			title: 'gopro hero 11', 
-			cond: 'good',
-			buyPrice: 150, 
-			sellPrice: 200, 
-			buyDate: '19 jun 2025', 
-			sellDate: '11 jul 2025',
-			img: 'item.png',
-			desc: 'lowerowerkowijefjsajfdqaojndjhnkiqhjikewdjhikqwwhjikdqhjkwedhiujqehjkqwihujewjhqejqwhkehjkqdw',
-			accs: ['battery', 'case', 'mounts'],
-			tests: [
-				{type: 'no sd errors', isCompleted: true},
-				{type: 'overheating', isCompleted: true},
-				{type: 'micro', isCompleted: true},
-				{type: 'stab', isCompleted: true}
-			]
-		}
-	]
+	items: []
 }
+
+export const fetchItems = createAsyncThunk(
+	'items/fetchItems', 
+	async (_, {rejectWithValue}) => {
+		try {
+			const response = await fetch('http://localhost:3001/items');
+
+			if (!response.ok) {
+				throw new Error(`HTTP error! Status: ${response.status}`);
+			}
+
+			const data = await response.json();
+			return data;
+		} catch (error) {
+			return rejectWithValue(error.message);
+		}
+  }
+);
+
+export const postItems = createAsyncThunk(
+	'items/postItems',
+	async(data)=>{
+		console.log(data)
+		try{
+			const response = await fetch('http://localhost:3001/items', {
+				method: 'POST', 
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({...data, id: nanoid()})
+			});
+			const res = response.json();
+			console.log(res)
+		}catch(error){
+			console.error(error)
+		}
+	}
+);
+
+export const editItems = createAsyncThunk(
+	'items/changeItems',
+	async ({data, id}) => {
+		console.log(data);
+		try{
+			const response = await fetch(`http://localhost:3001/items/${id}`,{
+				method: 'PATCH',
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify(data)
+			})
+		}catch(err){
+			console.log(err);
+		}
+	}
+)
+
+export const deleteItems = createAsyncThunk(
+	'items/deleteItems',
+	async({id}) => {
+		console.log(id);
+		try{
+			const response = await fetch(`http://localhost:3001/items/${id}`, {
+				method: 'DELETE',
+				headers: {
+					"Content-Type": "application/json"
+				},
+			})
+		}
+		catch(err){
+			console.log(err);
+		}
+	}
+)
 
 const itemsSlice = createSlice({
 	initialState,
@@ -75,15 +94,35 @@ const itemsSlice = createSlice({
 
 			const test = item.tests.find(tst => tst.type === type);
 
+
 			test.isCompleted = !test.isCompleted;
 		},
 		deleteItem: (state, action) =>{
 			const id = action.payload;
 			state.items = state.items.filter(item => item.id !== id);
+		},
+		configureItem: (state, action) =>{
+			const obj = action.payload;
+			
+			state.items = state.items.map(item => {
+				if(item.id === obj.id){
+					return obj;
+				}
+				return item;
+			})
 		}
+	},
+	extraReducers: (builder) => {
+		builder
+			.addCase(fetchItems.fulfilled, (state, action) => {
+				state.items = action.payload;
+			})
+			.addCase(fetchItems.rejected, (state, action)=>{
+				console.log('err');
+			})
 	}
 })
 
-export const {addItem, testDone, deleteItem} = itemsSlice.actions;
+export const {addItem, testDone, deleteItem, configureItem} = itemsSlice.actions;
 
 export default itemsSlice.reducer;

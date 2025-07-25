@@ -31,20 +31,21 @@ export default function SideList(){
 			img: '05',
 		},
 		{
-			link: '/profit',
-			text: 'Profit',
-			img: '05',
-		},
-		{
-			link: '/settings',
-			text: 'Settings',
-			img: '07',
+			link: '/statistics',
+			text: 'Statistics',
+			img: '09',
 		},
 		{
 			link: '/items',
 			text: 'Items',
 			img: '08',
 		},
+		{
+			link: '/settings',
+			text: 'Settings',
+			img: '07',
+		},
+		
 	]
 
 	return <nav className={styles.nav}>

@@ -21,7 +21,7 @@ function TransactionsItem({obj}) {
 				<p className={`${styles.cellContent}`}>{moment(obj.time).format('LLL') || obj.date}</p>
 			</td>
 			<td>
-				<p className={`${styles.cellContent}`}>Credit Card</p>
+				<p className={`${styles.cellContent}`}>{obj.type}</p>
 			</td>
 			<td className={styles.colAmount}>
 				<p className={`${styles.cellContent}`}>{obj.amount} uah</p>
